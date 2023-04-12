@@ -20,14 +20,14 @@ class Block_Variation {
 
 	public static function block_valiation_assets() {
 		// Get auto-generated asset file.
-		$asset_file = MTA_KIT_PATH . "/build/index.asset.php";
+		$asset_file = MTA_KIT_PATH . '/build/index.asset.php';
 		// If the asset file exists, get its data and load the script.
 		if ( file_exists( $asset_file ) ) {
 			$asset = include $asset_file;
 
 			wp_enqueue_script(
 				'line-social-icon',
-				MTA_KIT_URL . "/build/index.js",
+				MTA_KIT_URL . '/build/index.js',
 				$asset['dependencies'],
 				$asset['version'],
 				true

@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! class_exists( '\miminari\MTAK_Kit\Block_Style' ) ) {
+if ( ! class_exists( '\MTAK_Kit\Block_Style' ) ) {
 
 	define( 'MTA_KIT_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 	define( 'MTA_KIT_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );

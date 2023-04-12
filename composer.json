@@ -33,7 +33,7 @@
     "wp-coding-standards/wpcs": "dev-develop#2.3.0-fix-vsprintf"
   },
   "scripts": {
-    "format": "phpcbf",
-    "phpcs": "phpcs"
+    "format": "./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+    "phpcs": "./vendor/squizlabs/php_codesniffer/bin/phpcs"
   }
 }
