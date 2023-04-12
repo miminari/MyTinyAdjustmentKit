@@ -1,0 +1,23 @@
+{
+    "scripts": {
+        "start": "wp-scripts start",
+        "lint:php": "composer format & composer phpcs",
+        "sass": "sass --no-source-map src/scss/style.scss:src/style.css & sass --no-source-map src/scss/editor-style.scss:src/editor-style.css",
+        "autoprefix": "npx postcss src/**/*.css --use autoprefixer -d src/ --no-map",
+        "lint:css": "wp-scripts lint-style 'src/**/*.css' --fix",
+        "build:css": "npm run sass && npx postcss src/**/*.css --use postcss-inline-svg autoprefixer -d build/ --no-map && npm run lint:css",
+        "minify:css": "sass --style=compressed build/style.css:build/style.min.css"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^26.0.0",
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0",
+        "postcss-inline-svg": "^6.0.0",
+        "sass": "^1.62.0"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1% in JP"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "photosynthesic/mytinyadjustmentkit",
+  "description": "My Tiny Adjustment Kit",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/WordPress/WordPress-Coding-Standards"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MTA_Kit\\": "inc"
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "wp-coding-standards/wpcs": "dev-develop#2.3.0-fix-vsprintf"
+  },
+  "scripts": {
+    "format": "phpcbf",
+    "phpcs": "phpcs"
+  }
+}
