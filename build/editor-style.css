@@ -2,3 +2,10 @@
 .editor-styles-wrapper .wp-block-button .wp-block-button__link {
   color: var(--wp--preset--color--white);
 }
+.wp-block-button.is-style-arrow,
+.editor-styles-wrapper .wp-block-button.is-style-arrow {
+  .wp-block-button__link {
+    color: var(--wp--preset--color--white);
+    font-weight: bold;
+  }
+}

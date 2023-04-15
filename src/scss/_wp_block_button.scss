@@ -3,4 +3,14 @@
     .wp-block-button__link {
         color: var(--wp--preset--color--white);
     }
+    // custom styles
+    &.is-style-arrow {
+        .wp-block-button__link {
+            color: var(--wp--preset--color--white);
+            font-weight: bold;
+            &::after {
+                background-image: url();
+            }
+        }
+    }
 }
