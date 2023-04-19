@@ -1,3 +1,23 @@
 .wp-block-group {
     
 }
+
+// TODO サイトからコピペ 整形・整理する
+.mtakit-card {
+    border-radius: 1rem;
+  }
+  .mtakit-card .wp-block-heading {
+    padding: 0.625rem 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .mtakit-card .wp-block-group,
+  .mtakit-card p {
+      margin-block-start: 0;
+  }
+  .mtakit-card h3 + .wp-block-group {
+    padding: 0 1.5rem 2rem;
+  }
+  .mtakit-card .wp-block-group.is-layout-flex {
+    padding: 1.5rem 1rem;
+  }

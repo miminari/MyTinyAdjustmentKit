@@ -6,7 +6,7 @@
  *
  * @since      0.0.1
  *
- * @package    my-tiny-adustment-kit
+ * @package    my-tiny-adjustment-kit
  * @subpackage inc
  */
 
@@ -15,10 +15,10 @@ namespace MTA_Kit;
 class Block_Variation {
 
 	public static function init() {
-		add_action( 'enqueue_block_editor_assets', 'block_valiation_assets' );
+		add_action( 'enqueue_block_editor_assets', 'block_variation_assets' );
 	}
 
-	public static function block_valiation_assets() {
+	public static function block_variation_assets() {
 		// Get auto-generated asset file.
 		$asset_file = MTA_KIT_PATH . '/build/index.asset.php';
 		// If the asset file exists, get its data and load the script.

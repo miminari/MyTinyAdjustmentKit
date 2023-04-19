@@ -6,7 +6,7 @@
  *
  * @since      0.0.1
  *
- * @package    my-tiny-adustment-kit
+ * @package    my-tiny-adjustment-kit
  * @subpackage inc
  */
 
