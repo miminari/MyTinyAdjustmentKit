@@ -1,23 +1,40 @@
-.wp-block-group {
-    
-}
+// --------------------------- custom styles
 
-// TODO サイトからコピペ 整形・整理する
-.mtakit-card {
-    border-radius: 1rem;
-  }
-  .mtakit-card .wp-block-heading {
+// mtakit-card
+.mtakit-card,
+.editor-styles-wrapper .mtakit-card {
+  border-radius: 1rem;
+  background-color: var(--wp--preset--color--gray-0);
+
+  .wp-block-heading {
     padding: 0.625rem 0.5rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+
+    &:not(.has-text-color):not(.has-background) {
+      color: var(--wp--preset--color--white);
+      background-color: var(--wp--preset--color--blue-80);
+    }
   }
-  .mtakit-card .wp-block-group,
-  .mtakit-card p {
-      margin-block-start: 0;
+
+  .wp-block-group,
+  p {
+    margin-block-start: 0;
   }
-  .mtakit-card h3 + .wp-block-group {
+
+  > .wp-block-group {
     padding: 0 1.5rem 2rem;
   }
-  .mtakit-card .wp-block-group.is-layout-flex {
+
+  .wp-block-group.is-layout-flex {
     padding: 1.5rem 1rem;
+    border-bottom: 1px solid var(--wp--preset--color--gray-20);
+    margin-bottom: 1rem;
+    p:not(.has-text-color) {
+      color: var(--wp--preset--color--gray-50);
+      strong {
+        color: var(--wp--preset--color--blue-50);
+      }
+    }
   }
+}

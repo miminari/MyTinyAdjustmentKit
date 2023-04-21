@@ -4,19 +4,107 @@
   "settings": {
     "color": {
       "palette": [
-        { "name": "Cotrast", "slug": "contrast", "color": "#101517" },
-        { "name": "White", "slug": "white", "color": "#fff" },
-        { "name": "Primary", "slug": "primary", "color": "#3858E9" },
-        { "name": "WP Blue/Blue 50", "slug": "blue50", "color": "#2271B1" },
-        { "name": "WP Blue/Blue 80", "slug": "blue80", "color": "#043959" },
-        { "name": "Gutenberg/Alert Yellow", "slug": "yellow", "color": "#F0B849" },
-        { "name": "WP Gray/Gray 0", "slug": "gray0", "color": "#F6F7F7" },
-        { "name": "WP Gray/Gray 20", "slug": "gray30", "color": "#8C8F94" },
-        { "name": "WP Gray/Gray 30", "slug": "gray30", "color": "#8C8F94" },
-        { "name": "WP Gray/Gray 50", "slug": "gray50", "color": "#646970" },
-        { "name": "WP Gray/Gray 70", "slug": "gray70", "color": "#757575" }
+        {
+          "name": "Cotrast",
+          "slug": "contrast",
+          "color": "#101517"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#fff"
+        },
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#3858E9"
+        },
+        {
+          "name": "WP Blue/Blue 50",
+          "slug": "blue50",
+          "color": "#2271B1"
+        },
+        {
+          "name": "WP Blue/Blue 80",
+          "slug": "blue80",
+          "color": "#043959"
+        },
+        {
+          "name": "Gutenberg/Alert Yellow",
+          "slug": "yellow",
+          "color": "#F0B849"
+        },
+        {
+          "name": "WP Gray/Gray 0",
+          "slug": "gray0",
+          "color": "#F6F7F7"
+        },
+        {
+          "name": "WP Gray/Gray 20",
+          "slug": "gray20",
+          "color": "#A7AAAD"
+        },
+        {
+          "name": "WP Gray/Gray 30",
+          "slug": "gray30",
+          "color": "#8C8F94"
+        },
+        {
+          "name": "WP Gray/Gray 50",
+          "slug": "gray50",
+          "color": "#646970"
+        },
+        {
+          "name": "WP Gray/Gray 70",
+          "slug": "gray70",
+          "color": "#757575"
+        }
       ],
-      "defaultPalette": false
+      "defaultPalette": true
+    },
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1360px"
+    },
+    "typography": {
+      "dropCap": false,
+      "fluid": true,
+      "fontSizes": [
+        {
+          "fluid": false,
+          "size": "0.875rem",
+          "slug": "small"
+        },
+        {
+          "fluid": false,
+          "size": "1rem",
+          "slug": "medium"
+        },
+        {
+          "fluid": {
+            "min": "1.3125rem",
+            "max": "1.5rem"
+          },
+          "size": "1.5rem",
+          "slug": "large"
+        },
+        {
+          "fluid": {
+            "min": "1.75rem",
+            "max": "2rem"
+          },
+          "size": "2rem",
+          "slug": "x-large"
+        },
+        {
+          "fluid": {
+            "min": "2rem",
+            "max": "2.5rem"
+          },
+          "size": "2.5rem",
+          "slug": "xx-large"
+        }
+      ]
     }
   }
 }
