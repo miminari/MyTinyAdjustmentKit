@@ -6,6 +6,7 @@
   "license": "GPL-2.0+",
   "scripts": {
     "start": "wp-scripts start",
+    "wp-env": "wp-env start",
     "lint:php": "composer format & composer phpcs",
     "sass": "sass --no-source-map src/scss/style.scss:src/style.css & sass --no-source-map src/scss/editor-style.scss:src/editor-style.css",
     "autoprefix": "npx postcss src/**/*.css --use autoprefixer -d src/ --no-map",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@ixkaito/imagemin": "^0.1.0",
+    "@wordpress/env": "^5.16.0",
     "@wordpress/scripts": "^26.0.0",
     "autoprefixer": "^10.4.14",
     "imagemin": "^8.0.1",
