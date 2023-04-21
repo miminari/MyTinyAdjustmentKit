@@ -31,6 +31,8 @@ if ( ! class_exists( '\MTAK_Kit\Block_Style' ) ) {
 		\MTA_Kit\Theme_JSON::init();
 		// CSS
 		\MTA_Kit\CSS::init();
+		// Custom Post Type
+		\MTA_Kit\Custom_Post_Type::init();
 	}
 }
 
