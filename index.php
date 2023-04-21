@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       My Tiniy Adustment Kit
  * Description:       theme.json, styles customize plugin
- * Version:           0.0.2
+ * Version:           0.0.3
  * Author:            mimi@photosynthesic
  * Requires at least: 6.2
  * Requires PHP:      7.4
