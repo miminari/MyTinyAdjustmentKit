@@ -4,7 +4,7 @@
  *
  * The file that defines the customized post type
  *
- * @since      0.0.2
+ * @since      0.0.3
  *
  * @package    my-tiny-adjustment-kit
  * @subpackage inc
