@@ -33,6 +33,8 @@ if ( ! class_exists( '\MTAK_Kit\Block_Style' ) ) {
 		\MTA_Kit\CSS::init();
 		// Custom Post Type
 		\MTA_Kit\Custom_Post_Type::init();
+		// Block Variation
+		\MTA_Kit\Block_Variation::init();
 	}
 }
 

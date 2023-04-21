@@ -12,11 +12,55 @@
 
 namespace MTA_Kit;
 
+/**
+ * MTA_Kit Block Variation
+ */
 class Block_Variation {
 
 	public static function init() {
-		add_action( 'enqueue_block_editor_assets', 'block_variation_assets' );
+		add_action( 'enqueue_block_editor_assets', array( get_called_class(), 'block_variation_assets' ) );
+
+		// add_filter( 'rest_course_query', 'rest_course', 10, 2 );
+
+		// function rest_course( $args, $request ) {
+
+		// 	$price = $request->get_param( 'coursePrice' );
+
+		// 	if ( $price ) {
+		// 		$args['meta_key']   = 'price';
+		// 		$args['meta_value'] = absint( $price );
+		// 	}
+
+		// 	return $args;
+		// }
+
+		// add_filter( 'pre_render_block', 'custom_pre_render_block', 10, 2 );
+
+		// function custom_pre_render_block( $pre_render, $parsed_block ) {
+		// 	// Determine if this is the custom block variation.
+		// 	if ( 'mta-kit-course' === $parsed_block['attrs']['namespace'] ) {
+
+		// 		add_filter(
+		// 			'query_loop_block_query_vars',
+		// 			function( $query, $block ) use ( $parsed_block ) {
+
+		// 				// Add price meta key/value pair if queried.
+		// 				if ( $parsed_block['attrs']['query']['coursePrice'] ) {
+		// 					$query['meta_key']   = 'price';
+		// 					$query['meta_value'] = absint( $parsed_block['attrs']['query']['coursePrice'] );
+		// 				}
+
+		// 				return $query;
+		// 			},
+		// 			10,
+		// 			2
+		// 		);
+		// 	}
+
+		// 	return $pre_render;
+		// }
 	}
+
 
 	public static function block_variation_assets() {
 		// Get auto-generated asset file.
@@ -26,7 +70,7 @@ class Block_Variation {
 			$asset = include $asset_file;
 
 			wp_enqueue_script(
-				'line-social-icon',
+				'mta-kit-course-variation',
 				MTA_KIT_URL . '/build/index.js',
 				$asset['dependencies'],
 				$asset['version'],
@@ -34,6 +78,7 @@ class Block_Variation {
 			);
 		}
 	}
+
 }
 
 // function mtak_enqueue_line_icon_assets() {

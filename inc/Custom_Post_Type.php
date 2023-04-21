@@ -20,7 +20,7 @@ class Custom_Post_Type {
 	 * Init
 	 */
 	public static function init() {
-        // カスタム投稿タイプの追加.
+		// カスタム投稿タイプの追加.
 		add_action( 'init', array( get_called_class(), 'create_post_types' ) );
 	}
 
@@ -53,7 +53,7 @@ class Custom_Post_Type {
 			'hierarchical'       => true,
 			'menu_position'      => null,
 			'capability_type'    => 'post',
-			'supports'           => array( 'title', 'excerpt', 'editor', 'thumbnail', 'revisions' ),
+			'supports'           => array( 'title', 'excerpt', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
 			'menu_icon'          => 'dashicons-format-gallery',
 			'taxonomies'         => array( 'category', 'post_tag' ),
 			'has_archive'        => false,
