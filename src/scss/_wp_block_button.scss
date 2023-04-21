@@ -1,13 +1,20 @@
 .wp-block-button,
 .editor-styles-wrapper .wp-block-button {
   .wp-block-button__link {
-    color: var(--wp--preset--color--white);
+    border-radius: 20rem;
   }
   // custom styles
   &.is-style-arrow {
     .wp-block-button__link {
-      color: var(--wp--preset--color--white);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1rem 1rem 2rem;
       font-weight: bold;
+      &:not(.has-background):not(.has-text-color) {
+        color: var(--wp--preset--color--white);
+        background-color: var(--wp--preset--color--primary);
+      }
       &::after {
         content: "";
         display: flex;
@@ -18,3 +25,4 @@
     }
   }
 }
+
