@@ -13,7 +13,7 @@
     "lint:css": "wp-scripts lint-style 'src/**/*.css' --fix",
     "build:css": "npm run sass && npx postcss src/**/*.css --use postcss-inline-svg autoprefixer -d build/ --no-map && npm run lint:css",
     "minify:css": "sass --style=compressed build/style.css:build/style.min.css",
-    "cleanup:dist": "rimraf my-tiny-adjustment-kit",
+    "cleanup:dist": "rimraf my-tiny-adjustment-kit.zip",
     "dist:copy": "rsync -a --exclude='.*' --exclude='/node_modules' --exclude='/src' --exclude='/vendor' --exclude='composer*' --exclude='*.lock' --exclude='package.json' ./ my-tiny-adjustment-kit/ && rsync -a ./vendor/autoload.php my-tiny-adjustment-kit/vendor/ && rsync -a ./vendor/composer my-tiny-adjustment-kit/vendor/",
     "dist:zip": "zip -9 -qmr my-tiny-adjustment-kit.zip my-tiny-adjustment-kit",
     "dist": "npm run cleanup:dist && run-s dist:*"
